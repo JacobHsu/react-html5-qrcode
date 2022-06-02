@@ -5,6 +5,9 @@ import Html5QrcodePlugin from './Html5QrcodePlugin.jsx'
 import ResultContainerPlugin from './ResultContainerPlugin.jsx'
 import HowToUse from './HowToUse.jsx'
 
+import IconButton from '@mui/material/IconButton';
+import CropFreeIcon from '@mui/icons-material/CropFree';
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -17,10 +20,14 @@ class App extends React.Component {
   }
 
   render() {
+
     return (
       <div className="App">
         <section className="App-section">
           <div className="App-section-title"> Html5-qrcode React demo</div>
+          <IconButton aria-label="CropFree" color="primary">
+            <CropFreeIcon />
+          </IconButton>
           <br />
           <br />
           <br />
@@ -32,9 +39,12 @@ class App extends React.Component {
           <ResultContainerPlugin results={this.state.decodedResults} />
           <HowToUse />
         </section>
+        
       </div>
     );
   }
+
+  
 
   onNewScanResult(decodedText, decodedResult) {
     console.log(

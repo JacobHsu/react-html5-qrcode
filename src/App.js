@@ -4,9 +4,7 @@ import React from 'react';
 import Html5QrcodePlugin from './Html5QrcodePlugin.jsx'
 import ResultContainerPlugin from './ResultContainerPlugin.jsx'
 import HowToUse from './HowToUse.jsx'
-
-import IconButton from '@mui/material/IconButton';
-import CropFreeIcon from '@mui/icons-material/CropFree';
+import Scan from './Scan';
 
 class App extends React.Component {
   constructor(props) {
@@ -25,9 +23,7 @@ class App extends React.Component {
       <div className="App">
         <section className="App-section">
           <div className="App-section-title"> Html5-qrcode React demo</div>
-          <IconButton aria-label="CropFree" color="primary">
-            <CropFreeIcon />
-          </IconButton>
+          <Scan />
           <br />
           <br />
           <br />

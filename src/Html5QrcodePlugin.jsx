@@ -1,4 +1,4 @@
-import { Html5QrcodeScanner } from "html5-qrcode";
+import { Html5QrcodeScanner, Html5Qrcode } from "html5-qrcode";
 import React from 'react';
 
 const qrcodeRegionId = "html5qr-code-full-region";
@@ -48,6 +48,11 @@ class Html5QrcodePlugin extends React.Component {
         this.html5QrcodeScanner.render(
             this.props.qrCodeSuccessCallback,
             this.props.qrCodeErrorCallback);
+
+ 
+        const html5QrCode = new Html5Qrcode(qrcodeRegionId);
+        // If you want to prefer back camera
+        html5QrCode.start({ facingMode: "environment" }, config, this.props.qrCodeSuccessCallback);
     }
 };
 

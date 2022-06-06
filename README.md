@@ -4,6 +4,10 @@
 
 Example of using [mebjas/html5-qrcode](https://github.com/mebjas/html5-qrcode) in React project with example, source and demo.
 
+## Reference
+
+[react-html5-qrcode-reader](https://github.com/briosheje/react-html5-qrcode-reader) A wrapper around html5-qrcode for react and SSR.
+
 ## How to build a `React Plugin / Component` using [html5-qrcode](https://github.com/mebjas/html5-qrcode)
 We shall be using React's recommendation on [Integrating with Other Libraries](https://reactjs.org/docs/integrating-with-other-libraries.html) to create a plugin for `React`.
 
